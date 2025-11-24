@@ -1,3 +1,26 @@
+<p align="center">
+  <img src="banner.png" alt="Arduino + Processing RADAR System" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/dsvakola/Arduino-Processing-IDE-based-RADAR-System/releases">
+    <img src="https://img.shields.io/badge/version-v1.0-blue.svg" alt="Version">
+  </a>
+  <a href="https://github.com/dsvakola/Arduino-Processing-IDE-based-RADAR-System/blob/main/license.txt">
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="License: MIT">
+  </a>
+  <a href="https://www.arduino.cc/">
+    <img src="https://img.shields.io/badge/platform-Arduino%20UNO-orange.svg" alt="Platform: Arduino UNO">
+  </a>
+  <a href="https://processing.org/">
+    <img src="https://img.shields.io/badge/IDE-Processing-blueviolet.svg" alt="Processing IDE">
+  </a>
+  <a href="https://www.vsa.edu.in/">
+    <img src="https://img.shields.io/badge/made%20at-Vidyasagar%20Academy-red.svg" alt="Made at Vidyasagar Academy">
+  </a>
+</p>
+
+
 # Arduino + Processing RADAR System (v1.0)
 
 A complete RADAR-like scanning system built using **Arduino UNO**, **HC-SR04 Ultrasonic Sensor**, **SG90 Servo Motor**, and **Processing IDE**.  
