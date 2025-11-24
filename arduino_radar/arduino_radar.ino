@@ -1,0 +1,59 @@
+/* Code developed at Vidyasagar Academy
+ * Check the port of your Arduino and use the same
+ * in Processing IDE at Line #25
+ * www.vsa.edu.in
+ */
+ 
+#include <Servo.h>
+const int trigPin = 9;
+const int echoPin = 10;
+
+long duration;
+int distance;
+
+Servo myServo; 
+
+void setup() 
+{
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  Serial.begin(9600);
+  myServo.attach(3); // Defines on which pin is the servo motor attached
+}
+void loop() 
+{
+  
+  for(int i=15;i<=165;i++)
+  {  
+    myServo.write(i);
+    delay(30);
+    distance = calculateDistance();
+    Serial.print(i); 
+    Serial.print(","); 
+    Serial.print(distance); 
+    Serial.print("."); 
+  }
+  
+  for(int i=165;i>15;i--){  
+  myServo.write(i);
+  delay(30);
+  distance = calculateDistance();
+  Serial.print(i);
+  Serial.print(",");
+  Serial.print(distance);
+  Serial.print(".");
+  }
+}
+
+int calculateDistance()
+{ 
+  digitalWrite(trigPin, LOW); 
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH); 
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  
+  duration = pulseIn(echoPin, HIGH); 
+  distance= duration*0.034/2;
+  return distance;
+}
