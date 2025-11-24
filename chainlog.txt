@@ -1,0 +1,17 @@
+Changelog - Arduino + Processing RADAR System
+
+Version 1.0 (Initial Release)
+--------------------------------
+- First stable public version
+- Complete Arduino + Processing radar functionality
+- Smooth servo sweep (0°–180°)
+- Real-time ultrasonic distance measurement
+- Graphical radar screen in Processing IDE
+- Clean serial communication protocol
+- Tested and verified at Vidyasagar Academy
+
+Future planned updates:
+- v1.1: Port auto-detection in Processing
+- v1.2: Adjustable sweep speed
+- v1.3: Optional filtering for smoother sensor readings
+- v2.0: Full UI redesign with better graphics
